@@ -5,7 +5,7 @@
 
 myvar=0
 
-while [ $myvar -lt 13 ]
+while [ $myvar -le 13 ]
 do
 	echo "Hour: $myvar"
 	minutes=1
