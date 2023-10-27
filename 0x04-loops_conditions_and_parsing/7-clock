@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
-#Displays the time for 12 hours and 59 minutes
-#It displays hours from 0 to 12
-#It also displays minutes from 1 to 59
+#Displays the time for 12 hours and 59 minutes, It displays hours from 0 to 12 ,It also displays minutes from 1 to 59
 
-myvar=0
-
-while [ $myvar -le 12 ]
+H=0
+while [ $H -le 12 ]
 do
-	echo "Hour: $myvar"
-	minutes=1
-	while [ $minutes -le 59 ]
-
+	echo "Hour: $H"
+	M=1
+	while [ $M -le 59 ]
 	do
-		echo $minutes
-		(( minutes + 1 ))
+		echo $M
+		((M++))
 	done
-	(( myvar + 1 ))
+	((H++))
 done
