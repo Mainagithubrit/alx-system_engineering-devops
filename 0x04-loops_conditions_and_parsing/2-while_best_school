@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-#Displays 'Best School' 10 times using a while loop
-myvar=1
-
-while [ "$myvar" -le 10 ]
-do
-	echo "Best School"
-	myvar=$(( myvar + 1))
-done
