@@ -5,15 +5,15 @@
 
 myvar=0
 
-while [ $myvar -lt 12 ]
+while [ $myvar -lt 13 ]
 do
 	echo "Hour: $myvar"
 	minutes=1
-	while [ $minutes -le 60 ]
+	while [ $minutes -le 59 ]
 
 	do
 		echo $minutes
-		(( minutes++ ))
+		(( minutes + 1 ))
 	done
-	(( myvar++ ))
+	(( myvar + 1 ))
 done
