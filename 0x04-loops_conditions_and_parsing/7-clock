@@ -9,7 +9,7 @@ while [ $myvar -lt 12 ]
 do
 	echo "Hour: $myvar"
 	minutes=1
-	while [ $minutes -le 59 ]
+	while [ $minutes -le 60 ]
 
 	do
 		echo $minutes
