@@ -1,0 +1,30 @@
+Description
+
+This is a simple web infrustructure that hosts the website that is reachable via www.foobar.com.
+
+This is what is happening
+
+ * The user types the domanin name www.foobar.com an then the DNS converts the domain name to 8.8.8.8.
+
+ * A DNS(domain name system) is technology that changes human texts(www.foobar.com) or rather domain names which are text-based into an IP address
+
+ * After the text is converted to an IP address it is later used to find the server with the specified IP address.
+
+ * A server is a type of computer that provides services to other computers called clients.
+
+ * Inside the server is a software called web server which accepts request via HTTP.
+
+ * Once the request is recieved its directed to an application server, that installs, operates and hosts applications for end users.
+
+ * The application server retrieves the http request from the database, a database is a collection of well organized data or information that can easily be managed
+
+ * Once the data is retrieved it is retrieved in code base form 
+
+
+ Issues With this type of infrustructure
+
+  * In this infrustructure there are multiple single point of failure(SPOf)
+
+  * When it comes to maintenance since its only one server it has to be shutdown
+
+  * It cannot be scaled since it will become too slow due to traffic
