@@ -4,11 +4,17 @@
 sudo apt update
 sudo apt upgrade
 sudo apt-get install nginx -y
-sudo service nginx start
+mkdir /etc/nginx/html
 sudo ufw allow 'Nginx HTTP'
-sudo chwon -R "$USER":"$USER" /var/www/html
-sudo chmod -R 755 /var/www
-cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
-echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
-sudo service nginx restart
+echo "Hello World!" > /etc/nginx/html/index.html
+echo "server {
+        listen 80 default_server;
+ 	listen [::]:80 default_server;
+
+	root /etc/nginx/html;
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name _;
+}" > /etc/nginx/sites-available/default
+service nginx start
 
