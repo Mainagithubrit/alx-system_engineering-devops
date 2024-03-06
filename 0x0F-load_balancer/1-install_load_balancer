@@ -3,7 +3,7 @@
 
 sudo apt update && sudo apt upgrade
 sudo apt-get install --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.8
+sudo add-apt-repository ppa:vbernat/haproxy-2.8 -y
 sudo apt-get install haproxy=2.8.\* -y
 
 sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
@@ -29,4 +29,4 @@ backend clickviral-tech-backend
 echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
 
 echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
-service haproxy restart
+service haproxy start
