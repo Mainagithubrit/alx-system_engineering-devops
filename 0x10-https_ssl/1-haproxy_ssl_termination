@@ -41,7 +41,7 @@ frontend mainathedom-frontend
         default_backend mainathedom-backend
 
 frontend mainathedom-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/mainathedom.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.mainathedom.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend mainathedom-backend
 
