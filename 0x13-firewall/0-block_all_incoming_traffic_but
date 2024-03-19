@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+# This file installs and configures ufw on a server
+
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install ufw -y
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw enable
