@@ -3,8 +3,8 @@
 about his/her TODO list progress."""
 
 import re
-import sys
 import requests
+import sys
 
 REST_API = "https://jsonplaceholder.typicode.com"
 
