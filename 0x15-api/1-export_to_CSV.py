@@ -19,5 +19,5 @@ if __name__ == "__main__":
         for task in tasks:
             completed = task.get('completed')
             title_task = task.get('title')
-            csvfile.write("'{}','{}','{}','{}'\n".format(
+            csvfile.write('"{}","{}","{}","{}"\n'.format(
                 user, user_name, completed, title_task))
