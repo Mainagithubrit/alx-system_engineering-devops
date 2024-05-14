@@ -2,7 +2,7 @@
 # Sharig our SSH client configuration in our answer file.
 
 Host school
-	HostName 34.204.76.208
+	HostName 35.153.66.11
 	User ubuntu
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
