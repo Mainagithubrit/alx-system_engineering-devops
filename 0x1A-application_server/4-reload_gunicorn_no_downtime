@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# This code reboots gunicorn
-pgrep gunicorn | xargs kill -HUP
